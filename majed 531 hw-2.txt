@@ -1,0 +1,52 @@
+public class grades {
+
+
+  
+    public static char  ctol(int sng){
+        
+       
+       char[] letterGrades=new char [9];
+        char gradech ;
+        
+         if (sng >= 90)
+      {
+         gradech = 'A';
+      }
+      else if (sng >= 80)
+      {
+         gradech = 'B';
+      }
+      else if (sng >= 70)
+      {
+         gradech = 'C';
+      }
+      else if (sng >= 60)
+      {
+         gradech = 'D';
+      }
+      else
+      {
+         gradech = 'F';
+      }
+     
+      return gradech;
+       }
+      
+      
+public  static void main(String[] args) {
+      int[]  sng = { 70 , 90 , 30 , 90 ,  80 , 84 , 69 , 92 , 63 , 45 } ;
+      System.out.println("  A R R A Y  O F  GRADES");
+     for (int i = 0; i < 10; i++){
+    System.out.print(sng[i]+" ");}
+    System.out.println();
+    char[] letterGrades=new char [10]; 
+    System.out.println();
+    System.out.println();
+    System.out.println("  A R R A Y  O F  LETTER GRADES");
+    for (int i = 0; i < 10; i++) {
+      
+    letterGrades[i]=ctol(sng[i]);
+  
+   System.out.print(letterGrades[i]+"  ");
+    
+  }}}
